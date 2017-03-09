@@ -53,7 +53,8 @@ class Scripture:
         toc = soup.select('.table-of-contents .books a')
 
         if len(toc) == 0: #No books--just chapters
-            self.books.append(Book(self.name, self.link))
+            bookName = self.name if 'Doctrine' not in self.name else 'D&C'
+            self.books.append(Book(bookName, self.link))
         else:
             # Retrieve all books
             for t in toc:
