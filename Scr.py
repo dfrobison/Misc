@@ -141,10 +141,10 @@ def jsonDefault(object):
     return object.__dict__
 
 scriptures = Scriptures()
-#scriptures.volumes.append(Scripture('Old Testament',  'https://www.lds.org/scriptures/ot'))
-#scriptures.volumes.append(Scripture('New Testament',  'https://www.lds.org/scriptures/nt'))
-#scriptures.volumes.append(Scripture('Book of Mormon',  'https://www.lds.org/scriptures/bofm'))
-#scriptures.volumes.append(Scripture('Doctrine and Covenants',  'https://www.lds.org/scriptures/dc-testament/dc'))
+scriptures.volumes.append(Scripture('Old Testament',  'https://www.lds.org/scriptures/ot'))
+scriptures.volumes.append(Scripture('New Testament',  'https://www.lds.org/scriptures/nt'))
+scriptures.volumes.append(Scripture('Book of Mormon',  'https://www.lds.org/scriptures/bofm'))
+scriptures.volumes.append(Scripture('Doctrine and Covenants',  'https://www.lds.org/scriptures/dc-testament/dc'))
 scriptures.volumes.append(Scripture('Pearl of Great Price',  'https://www.lds.org/scriptures/pgp'))
 
 scriptures.download()
